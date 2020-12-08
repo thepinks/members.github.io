@@ -1,0 +1,44 @@
+@import './variables';
+
+header {
+    width: 75rem;
+}
+
+nav {
+    width: 75rem;
+    justify-content: flex-start;
+    a {
+        width: 10%;
+    }
+}
+
+main {
+    width: 75rem;
+    h2 {
+        width: 75rem;
+    }
+}
+
+.hero {
+    width: 75rem;
+}
+
+.main-content {
+    width: 75rem;
+    p {
+        font-size: 14pt;
+    }
+}
+
+.lg {
+    display: block;
+}
+
+.md {
+    display: none;
+}
+
+footer {
+    width: 75rem;
+    height: 70px;
+}

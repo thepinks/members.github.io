@@ -1,0 +1,139 @@
+@import './variables';
+
+/* Prevent adjustments of font size when orientation changes  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    background: $third;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0px 10px 0px;
+    img {
+        width: 70px;
+        height: 100%;
+        margin: 0px 5px 0px 5px;
+    }
+    div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        h1 {
+            margin: 0;
+            color: white;
+            font-family: $font;
+        }
+        h3 {
+            margin: 0;
+            color: white;
+            font-family: $font;
+        }
+    }
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+    background: $second;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        width: 25%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        font-family: $font;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px $prime;
+    }
+}
+
+.active {
+    background: $darken;
+}
+
+main {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    h2 {
+        width: 95vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: $font;
+    }
+}
+
+.hero {
+    width: 100vw;
+}
+
+.main-content {
+    width: 95vw;
+    img {
+        width: 50%;
+        float: right;
+        margin: 0px 0px 0px 4px;
+    }
+    p {
+        margin: 0px 4px 0px 0px;
+        font-size: 12pt;
+        font-family: $font;
+    }
+}
+
+.md {
+    display: none;
+}
+.lg {
+    display: none;
+}
+
+footer {
+    width: 100vw;
+    height: 50px;
+    background: $third;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-family: $font;
+        color: white;
+    }
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
